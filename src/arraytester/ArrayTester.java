@@ -38,28 +38,5 @@ public class ArrayTester {
         for (Action c : system1.getActionsForComplaint(1)){
             System.out.println(c);
         }
-
-        
-
-        
-        
-        //Complaint complaint2 = new Complaint(generateNewID(), "The toilet was dirty");
-        //Complaint complaint3 = new Complaint(generateNewID(), "The toilet was dirty");
-        
-        //complaints.add(complaint1);
-        
-       
-        
-        
-        
-        
-
-
-//System.out.println(complaint1);
-    }
-    
-    
-   
-    
-    
+    }   
 }
