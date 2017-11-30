@@ -15,7 +15,7 @@ public class CCS {
     private static int currentID;
     private ArrayList<Complaint> complaints = new ArrayList<>();
     
-    public static int generateNewID(){
+    public int generateNewID(){
         currentID += 1;
         return currentID;
     }
