@@ -6,17 +6,11 @@
 package arraytester;
 
 import java.util.ArrayList;
-
-
-
 /**
  *
  * @author dpitt
  */
 public class ArrayTester {
-    
-    
-    
     public static void main(String[] args) {
         // TODO code application logic here
         CCS system1 = new CCS();
