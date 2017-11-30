@@ -7,18 +7,17 @@ package arraytester;
 
 /**
  *
- * @author dpitt
+ * @author davidpitt
  */
-public class Action {
+public class Customer extends Person{
+    private String email;
     
-    
-    private String actionTaken;
-    
-    public Action(String actionTaken){
-        this.actionTaken = actionTaken;
+    public Customer(int ID, String name, String email){
+        super(ID,name);
+        this.email = email;
     }
     
     public String toString(){
-        return (actionTaken);
+        return (super.toString() + "\nEmail: " + email);
     }
 }
