@@ -17,11 +17,13 @@ public class ArrayTester {
         Complaint complaint1 = new Complaint(system1.generateNewID(), "The toilet was dirty");
         Complaint complaint2 = new Complaint(system1.generateNewID(), "Bad bad service");
         Complaint complaint3 = new Complaint(system1.generateNewID(), "My food was cold cold");
-        Complaint complaint4 = new LiftComplaint(system1.generateNewID(), "My food was cold cold", 5);
+        Complaint complaint4 = new LiftComplaint(system1.generateNewID(), "It smelled of poo", 5);
+        Complaint complaint5 = new LiftComplaint(system1.generateNewID(), "The buttons were stiff", 3);
         system1.addComplaint(complaint1);
         system1.addComplaint(complaint2);
         system1.addComplaint(complaint3);
         system1.addComplaint(complaint4);
+        system1.addComplaint(complaint5);
         
         system1.printComplaints();
         
@@ -32,5 +34,17 @@ public class ArrayTester {
         for (Action c : system1.getActionsForComplaint(1)){
             System.out.println(c);
         }
+        
+        if (complaint4 instanceof LiftComplaint){
+            System.out.println("yolo");
+        }
+        
+        for (Complaint c : system1.getLiftComplaints()){
+            System.out.println(c);
+        }
+            
     }   
+    
+    
+    
 }
