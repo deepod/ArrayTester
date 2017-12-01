@@ -42,6 +42,8 @@ public class ArrayTester {
         for (Complaint c : system1.getLiftComplaints()){
             System.out.println(c);
         }
+        
+        System.out.println(complaint5.getActions());
             
     }   
     

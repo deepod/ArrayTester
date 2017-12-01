@@ -54,4 +54,16 @@ public class CCS {
         
         return null;
     }
+    
+    
+    public List <Complaint> getLiftComplaints(){
+        ArrayList<Complaint> liftComplaints = new ArrayList<Complaint>();
+        for (Complaint c : complaints){
+            if (c instanceof  LiftComplaint){
+                liftComplaints.add(c);
+            }       
+        }
+        return liftComplaints;
+    }
+    
 }
